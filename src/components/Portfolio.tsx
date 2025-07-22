@@ -285,6 +285,8 @@ const Portfolio: React.FC = () => {
                   className="w-full max-h-[70vh] object-cover"
                   controls
                   autoPlay
+                  oading="lazy" // optional; some browser support
+                      preload="metadata"
                 />
 
                 <div className="p-4">
@@ -295,9 +297,7 @@ const Portfolio: React.FC = () => {
                     {activeVideo.category}
                   </p>
                   <div className="flex justify-between text-gray-600 text-sm mt-2">
-                    <span>👁 {activeVideo.views}</span>
-                    <span>❤️ {activeVideo.likes}</span>
-                    <span>💬 {activeVideo.comments}</span>
+                    
                   </div>
                 </div>
               </div>
