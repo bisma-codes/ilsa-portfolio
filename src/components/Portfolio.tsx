@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: 'Why myco?',
       categories: ['video', 'social-media'],
-      video: '/videos/cc5.mp4', // ✅ Local or hosted video path
+      video: '/videos/cc5.webm', // ✅ Local or hosted video path
       likes: 2543,
       views: 45231,
       comments: 187,
@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
       id: 2,
       title: 'Story of the startup',
       categories: ['video', 'social-media'],
-      video: '/videos/vm1.mp4',
+      video: '/videos/vm1.webm',
       likes: 1876,
       views: 32108,
       comments: 143,
@@ -36,7 +36,7 @@ const Portfolio: React.FC = () => {
       id: 3,
       title: 'Sufi PR',
       categories: ['collaboration', 'social-media'],
-      video: '/videos/co1.mp4',
+      video: '/videos/co1.webm',
       likes: 3421,
       views: 67543,
       comments: 298,
@@ -46,7 +46,7 @@ const Portfolio: React.FC = () => {
       id: 4,
       title: 'Life of a Social Media Intern',
       categories: ['content', 'social-media'],
-      video: '/videos/cc2.mp4',
+      video: '/videos/cc2.webm',
       likes: 4523,
       views: 89432,
       comments: 456,
@@ -56,7 +56,7 @@ const Portfolio: React.FC = () => {
       id: 5,
       title: 'Wimbledon Promotion',
       categories: ['social-media', 'collaboration'],
-      video: '/videos/vm2.mp4',
+      video: '/videos/vm2.webm',
       likes: 2134,
       views: 43256,
       comments: 189,
@@ -66,7 +66,7 @@ const Portfolio: React.FC = () => {
       id: 6,
       title: 'will we make it happen?',
       categories: ['content', 'social-media'],
-      video: '/videos/cc4.mp4',
+      video: '/videos/cc4.webm',
       likes: 3876,
       views: 76234,
       comments: 342,
@@ -76,7 +76,7 @@ const Portfolio: React.FC = () => {
       id: 7,
       title: 'her type? ',
       categories: ['social-media', 'video'],
-      video: '/videos/vm3.mp4',
+      video: '/videos/vm3.webm',
       likes: 1654,
       views: 28976,
       comments: 123,
@@ -87,7 +87,7 @@ const Portfolio: React.FC = () => {
       id: 8,
       title: 'English Premiere League',
       categories: ['script', 'collaboration'],
-      video: '/videos/sc1.mp4',
+      video: '/videos/sc1.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -97,7 +97,7 @@ const Portfolio: React.FC = () => {
       id: 9,
       title: 'PSL',
       categories: ['content', 'collaboration'],
-      video: '/videos/cc6.mp4',
+      video: '/videos/cc6.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -107,7 +107,7 @@ const Portfolio: React.FC = () => {
       id: 10,
       title: 'Dont be that guy',
       categories: ['content', 'video'],
-      video: '/videos/vm5.mp4',
+      video: '/videos/vm5.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -117,7 +117,7 @@ const Portfolio: React.FC = () => {
       id: 11,
       title: 'Daani',
       categories: ['collaboration', 'script'],
-      video: '/videos/sc2.mp4',
+      video: '/videos/sc2.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -127,7 +127,7 @@ const Portfolio: React.FC = () => {
       id: 12,
       title: 'Hunger Hub',
       categories: ['collaboration', 'video'],
-      video: '/videos/co2.mp4',
+      video: '/videos/co2.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -137,7 +137,7 @@ const Portfolio: React.FC = () => {
       id: 13,
       title: 'Win 50 Lakhs',
       categories: ['script', 'video'],
-      video: '/videos/sc3.mp4',
+      video: '/videos/sc3.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -147,7 +147,7 @@ const Portfolio: React.FC = () => {
       id: 14,
       title: 'International Squash',
       categories: ['script', 'collaboration'],
-      video: '/videos/co6.mp4',
+      video: '/videos/co6.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -157,7 +157,7 @@ const Portfolio: React.FC = () => {
       id: 15,
       title: 'Broadway',
       categories: ['video', 'collaboration'],
-      video: '/videos/co4.mp4',
+      video: '/videos/co4.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -167,7 +167,7 @@ const Portfolio: React.FC = () => {
       id: 16,
       title: 'Khausay Kitchen',
       categories: ['video', 'collaboration'],
-      video: '/videos/co3.mp4',
+      video: '/videos/co3.webm',
       likes: 2987,
       views: 54321,
       comments: 234,
@@ -266,20 +266,7 @@ const Portfolio: React.FC = () => {
                     {item.title}
                   </h3>
 
-                  <div className="flex items-center justify-between text-xs sm:text-[10px] md:text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <Heart className="w-3 h-3 sm:w-2.5 sm:h-2.5 md:w-4 md:h-4" />
-                      <span>{item.likes}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Eye className="w-3 h-3 sm:w-2.5 sm:h-2.5 md:w-4 md:h-4" />
-                      <span>{item.views}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <MessageCircle className="w-3 h-3 sm:w-2.5 sm:h-2.5 md:w-4 md:h-4" />
-                      <span>{item.comments}</span>
-                    </div>
-                  </div>
+                  
 
                 </div>
               </div>

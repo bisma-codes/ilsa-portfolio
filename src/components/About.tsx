@@ -50,7 +50,7 @@ const About: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="w-30 h-30 bg-pinterest-red rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+            <div className=" flex items-center justify-center mx-auto mb-4 overflow-hidden">
               <img src="/images/pfp.jpg" alt="Profile" className="w-full h-full object-cover" />
             </div>
 

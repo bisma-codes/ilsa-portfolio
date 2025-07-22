@@ -43,9 +43,9 @@ const WhyMe: React.FC = () => {
           intervalRefs.current = [];
 
           // Animate again
-          animateCounter(30, 'followers');
-          animateCounter(324000000, 'views');
-          animateCounter(11000000, 'likes');
+          animateCounter(20, 'followers');
+          animateCounter(8400000, 'views');
+          animateCounter(338000000, 'likes');
           animateCounter(30, 'engagement');
         }
       },
@@ -74,11 +74,7 @@ const WhyMe: React.FC = () => {
       title: 'Targeted Audience Reach',
       description: 'Strategic content that connects with your ideal customers and builds lasting relationships.'
     },
-    {
-      icon: Award,
-      title: 'Award-Winning Campaigns',
-      description: 'Recognized expertise in creating campaigns that not only perform but also win industry awards.'
-    },
+   
     {
       icon: Zap,
       title: 'Fast Turnaround',
@@ -115,7 +111,7 @@ const WhyMe: React.FC = () => {
               <Eye className="w-8 h-8 text-white" />
             </div>
             <div className="text-3xl font-bold text-gray-900 mb-2">
-              {(counters.views / 1000000).toFixed(1)}K+
+              {(counters.views / 1000000).toFixed(1)}M+
             </div>
             <div className="text-gray-600 font-medium">Views Delivered</div>
           </div>
